@@ -167,6 +167,22 @@ img {
     padding-top: 120px;
 }
 
-.stats-heading {}
+.stats-heading {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.stats-section h3 {}
+
+.stats-section .grid i {}
+
+.stats-section .grid h3 {
+    font-size: 35px;
+}
+
+.stats-section .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /* Stats Section End */
