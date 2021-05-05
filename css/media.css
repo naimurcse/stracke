@@ -1,0 +1,67 @@
+/* Under 789px Screen (Tablets and under )*/
+@media (max-width: 768px) {
+
+    .grid,
+    .showcase-section .grid,
+    .cli-section .grid,
+    .cloud-section .grid,
+    .footer .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase-section {
+        height: auto;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .stats-section .grid div {
+        margin-bottom: 40px;
+    }
+
+    .showcase-form {
+        top: 20px;
+        justify-self: center;
+    }
+
+    .showcase-section::before,
+    .showcase-section::after {
+        background: #fff;
+
+    }
+
+    .stats-section {
+        padding-top: 80px;
+    }
+
+    .cli-section .grid>*:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer .grid {
+        text-align: center;
+        row-gap: 25px;
+    }
+}
+
+/* Under 576px Screen (Mobile)*/
+@media (max-width: 576px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        background: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+
+
+
+}
