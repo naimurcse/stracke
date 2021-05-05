@@ -2,6 +2,11 @@
 
 :root {
     --primary-color: #00adb5;
+    --secondary-color: #039ea7;
+    /* --secondary-color: #aad8d3; */
+    --light-color: #eeeeee;
+    --dark-color: #393e46;
+    --text-color: #393e46;
 }
 
 * {
@@ -15,6 +20,7 @@ body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
     color: #333;
+    /* background-color: var(--light-color); */
 }
 
 ul {
@@ -87,6 +93,8 @@ img {
     /* border: 1px solid red; */
     height: 400px;
     background-color: var(--primary-color);
+    /* background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.42999999999999%, rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.71600000000001%, rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%), linear-gradient(135deg, rgb(246, 99, 200) 0%, rgb(246, 99, 200) 12.5%, rgb(223, 98, 196) 12.5%, rgb(223, 98, 196) 25%, rgb(199, 97, 192) 25%, rgb(199, 97, 192) 37.5%, rgb(176, 96, 188) 37.5%, rgb(176, 96, 188) 50%, rgb(152, 95, 184) 50%, rgb(152, 95, 184) 62.5%, rgb(129, 94, 180) 62.5%, rgb(129, 94, 180) 75%, rgb(105, 93, 176) 75%, rgb(105, 93, 176) 87.5%, rgb(82, 92, 172) 87.5%, rgb(82, 92, 172) 100%); */
+    background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251, 0.04) 0%, rgba(251, 251, 251, 0.04) 50%, rgba(229, 229, 229, 0.04) 50%, rgba(229, 229, 229, 0.04) 100%), radial-gradient(circle at 66% 97%, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 50%, rgba(46, 46, 46, 0.04) 50%, rgba(46, 46, 46, 0.04) 100%), radial-gradient(circle at 86% 7%, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 50%, rgba(200, 200, 200, 0.04) 50%, rgba(200, 200, 200, 0.04) 100%), radial-gradient(circle at 15% 16%, rgba(99, 99, 99, 0.04) 0%, rgba(99, 99, 99, 0.04) 50%, rgba(45, 45, 45, 0.04) 50%, rgba(45, 45, 45, 0.04) 100%), radial-gradient(circle at 75% 99%, rgba(243, 243, 243, 0.04) 0%, rgba(243, 243, 243, 0.04) 50%, rgba(37, 37, 37, 0.04) 50%, rgba(37, 37, 37, 0.04) 100%), linear-gradient(90deg, rgb(34, 222, 237), rgb(135, 89, 215));
     color: #fff;
     position: relative;
 }
@@ -100,7 +108,7 @@ img {
     right: 0;
     left: 0;
     bottom: -70px;
-    background: #ffffff96;
+    background: #ffffff60;
     transform: skewY(-2deg);
 }
 
@@ -186,3 +194,103 @@ img {
 }
 
 /* Stats Section End */
+
+
+/* Cli Section Start */
+.cli-section {}
+
+.cli-section .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* background: red; */
+}
+
+.cli-section .grid>*:first-child {
+    grid-column: 1 /span 2;
+    grid-row: 1 /span 2;
+}
+
+/* Cli Section End */
+
+
+/* Cloud Section Start */
+.cloud-section {
+    /* background-image: url(../images/bg.png); */
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    color: #fff;
+}
+
+.cloud-section .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+.cloud-section h2 {}
+
+.cloud-section p {}
+
+.cloud-section a {}
+
+.cloud-section img {
+    width: 350px;
+    /* margin-left: auto; */
+    margin: auto;
+}
+
+/* Cloud Section End */
+
+
+/* Languages Section Start */
+.languages-section {}
+
+.languages-section h2 {}
+
+.languages-section .flex {
+    flex-wrap: wrap;
+}
+
+.languages-section .card {
+    margin: 18px 10px 40px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.languages-section .card:hover {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+
+}
+
+.languages-section .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages-section .card img {
+    width: 80px;
+}
+
+
+/* Languages Section End */
+
+
+/* Footer Start */
+.footer {}
+
+.footer nav ul li a {
+    color: #fff;
+}
+
+.footer .social-icons {
+    /* color: #fff; */
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Footer End */

@@ -60,13 +60,61 @@
     border: 1px solid #fff;
 }
 
-.btn-primary {
-    background: var(--primary-color);
-}
 
 .text-center {
     text-align: center;
 }
+
+/* Background and Button Color */
+.bg-primary,
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-light,
+.btn-light {
+    background: var(--light-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Text Size */
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+    /* 1 rem = 16 px  */
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+
+
 
 /* Margin */
 .my-1 {
